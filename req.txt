@@ -1,0 +1,28 @@
+# ── Core UI ───────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Environment ───────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── PDF Ingestion ─────────────────────────────────────────────────────────────
+pdfplumber>=0.11.0
+
+# ── Excel / CSV Ingestion ─────────────────────────────────────────────────────
+pandas>=2.2.0
+openpyxl>=3.1.0          # pandas Excel engine (.xlsx / .xls)
+
+# ── Text Chunking ─────────────────────────────────────────────────────────────
+nltk>=3.8.1
+
+# ── Embeddings & Re-ranking ───────────────────────────────────────────────────
+sentence-transformers>=3.0.0   # all-MiniLM-L6-v2 + CrossEncoder ms-marco-MiniLM-L-6-v2
+
+# ── Vector Search ─────────────────────────────────────────────────────────────
+faiss-cpu>=1.8.0          # use faiss-gpu if you have CUDA
+
+# ── Sparse Search ─────────────────────────────────────────────────────────────
+rank-bm25>=0.2.2
+
+# ── LLM Orchestration ────────────────────────────────────────────────────────
+langchain-ollama>=0.1.3
+langchain-core>=0.2.0
